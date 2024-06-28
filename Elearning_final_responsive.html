@@ -1,0 +1,2670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- google_fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@600&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@600&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2c36dc14c4.js" crossorigin="anonymous"></script>
+
+
+    <title>Elearning-Responsive</title>
+    <style>
+        body {
+
+            animation: transitionIn 990ms ease-in 1000ms;
+        }
+
+        @keyframes transitionIn {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+        .over {
+            overflow: hidden;
+        }
+
+        .bag_color {
+            background-color: rgb(4, 35, 92);
+        }
+
+        .main_navbar_names {
+            font-size: 15px;
+            color: rgb(255, 17, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding: 0px 15px;
+        }
+
+        .navbar_names:hover {
+            color: #fdbe39;
+            cursor: pointer;
+        }
+
+        .navbar_names {
+            font-size: 15px;
+            color: rgb(4, 11, 74);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+
+        .drop_nav {
+            font-size: 14px;
+            color: rgb(4, 11, 74);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding: 10px 10px;
+            padding-right: 100px;
+        }
+
+        .drop_nav_1 {
+            border-top: 2px solid #fdbe39;
+            margin-top: 10px;
+        }
+
+        .navbar-brand {
+            padding: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .navbar {
+            padding: 0px;
+        }
+
+        /* main_navbar_login_rgister */
+        .login_register {
+            margin: 0px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 17px;
+            color: #07294d !important;
+            background-color: #ffc600;
+            padding: 20px 30px;
+            display: inline-block;
+            text-decoration: none !important;
+            border: 0px;
+            cursor: pointer;
+        }
+
+
+        .login_register:hover {
+            columns: white;
+            background-color: #fcd174;
+        }
+
+        /* main_head2_img */
+        .main_head2_ {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .main_head2_img {
+            width: 80%;
+            margin-left: 30%;
+        }
+
+        .main_heading2_icon_text {
+            display: flex;
+            flex-direction: column;
+            /* padding: 0px 60px; */
+            font-size: 1.3em;
+            margin: 0px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .main_heading2_icon {
+            display: flex;
+            align-items: center;
+            margin-left: 13%;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .main_heading2_icons {
+            /* justify-content: baseline; */
+            color: rgb(4, 11, 74);
+            font-size: 1.9em;
+            padding: 0px;
+        }
+
+        .icon_ho {
+            color: white;
+        }
+
+        .icon_ho:hover {
+            color: #fdbe39;
+            cursor: pointer;
+        }
+
+        @media(max-width:1082px) {
+            .main_heading2_icon {
+                display: none;
+            }
+
+            .main_head2_img {
+                align-items: center;
+                margin-left: 10%;
+            }
+
+            .icon_nav {
+                display: none;
+            }
+        }
+
+
+        .main_heading2_second_text {
+            font-size: 12px;
+            color: #595959;
+        }
+
+        .main_heading2_contact {
+            justify-content: baseline;
+            display: flex;
+        }
+
+        /* end */
+        .user_2_btn {
+            background: none;
+            border: none;
+            color: #1b4332;
+            background-color: #b7e4c7;
+            border-radius: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .hd_co {
+            /* text-align: center; */
+            color: rgb(4, 35, 92);
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .hd_co:hover {
+            color: #fdbe39;
+        }
+
+        /* icon */
+        .box_para {
+            display: flex;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 16px;
+            color: #595959;
+            font-family: "Raleway", sans-serif;
+            line-height: 20px;
+        }
+
+        .box_head {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(54, 53, 53);
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+        }
+
+
+        .baground_circle_1 {
+            width: 90px;
+            height: 90px;
+            background-color: rgb(226, 229, 255);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .book-icon {
+
+            display: flex;
+            color: rgb(7, 25, 79);
+            font-size: 40px;
+            justify-content: center;
+        }
+
+        .baground_circle_2 {
+            width: 90px;
+            height: 90px;
+            background-color: rgba(212, 227, 255, 0.68);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .cap-icon {
+            display: flex;
+            color: #1e96fc;
+            font-size: 40px;
+            justify-content: center;
+        }
+
+        /* box_3 */
+
+        .baground_circle_3 {
+            width: 90px;
+            height: 90px;
+            background-color: #fffbca;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .glob-icon {
+            display: flex;
+            color: #ff8000;
+            font-size: 40px;
+            justify-content: center;
+        }
+
+        .baground_circle_4 {
+            width: 90px;
+            height: 90px;
+            background-color: #e9ffc1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .conatact-icon {
+            display: flex;
+            color: #80b918;
+            font-size: 40px;
+            justify-content: center;
+        }
+
+        .baground_circle_5 {
+            width: 90px;
+            height: 90px;
+            background-color: #c0ceff82;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .headphone-icon {
+            display: flex;
+            color: #3f37c9;
+            font-size: 40px;
+            justify-content: center;
+        }
+
+        .baground_circle_6 {
+            width: 90px;
+            height: 90px;
+            background-color: #ffc7d86e;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .person-icons {
+            display: flex;
+            color: #ff477e;
+            font-size: 45px;
+            justify-content: center;
+        }
+
+        /* middle_section_2 heading and para */
+
+
+
+        .middle_section_heading_ {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1%;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+
+        }
+
+        .middle_section_second_heading {
+            font-size: 18px;
+            color: #595959;
+            font-family: "Raleway", sans-serif;
+            margin: 0px -4%;
+
+        }
+
+        .middle_section_third_heading {
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            color: #595959;
+            font-family: "Raleway", sans-serif;
+        }
+
+        /* middle_section_send para harding */
+
+        /* .gallery_button_all */
+
+        .gallery_button_all button {
+            background: none;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            background-color: #dad6d6b6;
+            ;
+            margin: 10px 10px;
+            padding: 8px 26px;
+            font-size: 14px;
+            font-weight: 600;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .gallery_button_all button:hover {
+            background-color: #ffce1d;
+            cursor: pointer;
+        }
+
+        .gallery_button_all {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* .gallery_button_all */
+
+        /* .gallery_img_start */
+
+        .gallery_img_all {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery_img>img {
+            margin: 0px ;
+            width: 350px;
+            border-radius: 15px;
+        }
+
+
+        .pricing_box_main {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-bottom: 80px;
+            flex-wrap: wrap;
+        }
+
+        .Pricing_box1 {
+
+
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+
+        .princing_heading {
+            padding: 15px 15px;
+            background-color: #4382ff;
+            font-size: 25px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 6px 6px 0px 0px;
+        }
+
+        .Price_heading_2 {
+            padding: 25px 10px 25px;
+            background-color: #eee;
+            font-size: 25px;
+            color: #4382ff;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .box_menu {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #383838;
+            border-bottom: 1px solid #eee;
+            padding: 12px 15px;
+        }
+
+        .box_menu:hover {
+            color: #383838ce;
+        }
+
+        .pricing_button_1 {
+            background-color: #4382ff;
+            text-align: center;
+            color: #fff;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            padding: 15px 25px;
+            text-decoration: none;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        .pricing_button_1:hover {
+            color: #0f4897;
+            background-color: #6c9dff;
+            border: 1px solid #4382ff;
+
+        }
+
+        .pricing_button {
+            padding: 25px 15px;
+            text-align: center;
+
+        }
+
+        /* .Pricing_box_2 */
+        .Pricing_box2 {
+            width: 26%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+
+        .princing_heading_2 {
+            padding: 15px 15px;
+            background-color: #554da7;
+            font-size: 25px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 6px 6px 0px 0px;
+
+        }
+
+        .Price_heading_2_2 {
+            padding: 25px 10px 25px;
+            background-color: #eee;
+            font-size: 25px;
+            color: #554da7;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .box_menu_2 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #383838;
+            border-bottom: 1px solid #eee;
+            padding: 12px 15px;
+        }
+
+        .box_menu_2:hover {
+            color: #383838ce;
+        }
+
+        .pricing_button_2 {
+            background-color: #554da7;
+            text-align: center;
+            color: #fff;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            padding: 15px 25px;
+            text-decoration: none;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        .pricing_button_2:hover {
+            color: #4137b4;
+            background-color: #a199ff;
+            border: 1px solid #554da7;
+        }
+
+        .pricing_button {
+            padding: 25px 15px;
+            text-align: center;
+
+        }
+
+        /* princing_box_2_end */
+
+        /* princing_box_3_start */
+
+        .Pricing_box3 {
+            width: 26%;
+            margin-top: 30px;
+            margin-right: 100px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+
+        .princing_heading_3 {
+            padding: 15px 15px;
+            background-color: #f94fa4;
+            font-size: 25px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 6px 6px 0px 0px;
+
+        }
+
+        .Price_heading_2_3 {
+            padding: 25px 10px 25px;
+            background-color: #eee;
+            font-size: 25px;
+            color: #f94fa4;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .box_menu_3 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #383838;
+            border-bottom: 1px solid #eee;
+            padding: 12px 15px;
+        }
+
+        .box_menu_3:hover {
+            color: #383838ce;
+        }
+
+        .pricing_button_3 {
+            background-color: #f94fa4;
+            text-align: center;
+            color: #fff;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            padding: 15px 25px;
+            text-decoration: none;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        .pricing_button_3:hover {
+            color: #b40f62;
+            background-color: #ffabd5;
+            border: 1px solid #f94fa4;
+        }
+
+        .pricing_button {
+            padding: 25px 15px;
+            text-align: center;
+
+        }
+
+        /* princing_box_3_start */
+        /* princing_box_end */
+
+        /* Events_start */
+        .middle_section_3_heading {
+            font-size: 18px;
+            color: rgb(4, 35, 92);
+            font-family: 'Rubik', sans-serif;
+            font-weight: 600;
+        }
+
+        .middle_section_3_heading:hover {
+            color: #fdbe39;
+        }
+
+        .middle_section_3_para {
+            font-size: 15px;
+            color: #575555;
+            font-family: 'Poppins', sans-serif;
+            line-height: 25px;
+        }
+
+        /* event_1_box */
+        .blog_box_7_img_event_1 {
+            background-image: url(http://drive.google.com/uc?export=view&id=1HhpkWbPYDA8kk-iTXjgQU-o4OcOXWKMu
+);
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        /* event_2_box */
+        .blog_box_7_img_event_2 {
+            background-image: url(http://drive.google.com/uc?export=view&id=1_r50z351zwBHQRMUx352qs-vO_akSmVN);
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        /* event_3_box */
+        .blog_box_7_img_event_3 {
+            background-image: url(http://drive.google.com/uc?export=view&id=1O1kmZTLnxmECHL1jveNx6RmXwoTZaiwf);
+            https://drive.google.com/file/d/1BZzW6nY3eX9JONiD10vIJCztSIu2RUlu
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .blog_box_event_month {
+            padding: 10px 30px;
+            margin: 10px;
+            display: inline-block;
+            background-color: #ffc600;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        .blog_box_event_month>h4 {
+            color: black;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .blog_box_event_month>p {
+            color: black;
+            margin-top: 3px;
+            font-size: 12px;
+            font-family: 'Rubik', sans-serif;
+            line-height: 10px;
+        }
+
+
+        /* icons_and_name */
+        .person_map_icon_all {
+            font-size: 17px;
+            display: flex;
+            color: rgb(4, 35, 92);
+            margin-top: 10px;
+            justify-content: center;
+            border-top: 1px solid rgb(218, 215, 215);
+
+        }
+
+        .person_icon_and_text {
+            font-size: 15px;
+            display: flex;
+            color: rgb(4, 35, 92);
+            margin-top: 20px;
+            padding: 20px 16px;
+            border-right: 1px solid rgb(218, 215, 215);
+        }
+
+        .map_icon_and_text {
+            font-size: 15px;
+            display: flex;
+            color: rgb(4, 35, 92);
+            margin-top: 20px;
+            padding: 20px 2px;
+        }
+
+        .person_icon_and_text:hover {
+            color: rgb(31, 106, 245);
+        }
+
+        .map_icon_and_text:hover {
+            color: rgb(31, 106, 245);
+        }
+
+        .person_map_icon_all div {
+            margin: 0px 9px;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 600;
+            color: rgb(4, 35, 92);
+
+        }
+
+        /* end event */
+        /* Our Blog */
+        /* event_1_box */
+        .blog_box_2_img_event_1 {
+            background-image: url(http://drive.google.com/uc?export=view&id=1-hE0X49WoTbgheRtF-xPcM-xp9lml96k);
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        /* event_2_box */
+        .blog_box_2_img_event_2 {
+            background-image: url(http://drive.google.com/uc?export=view&id=1rFoytExdBevsGfat2Rc-Yv-CJnVWzfQ5
+);
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        /* event_3_box */
+        .blog_box_2_img_event_3 {
+            background-image: url(http://drive.google.com/uc?export=view&id=1fo_YjnXgQUNabEEZSg8P2JOqNAGtZodw
+);
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        /* icons_and_name */
+        .calender_comment_icon_all {
+            font-size: 17px;
+            display: flex;
+            color: rgb(4, 35, 92);
+            justify-content: center;
+            border-top: 1px solid rgb(218, 215, 215);
+
+        }
+
+        .calender_icon_and_text {
+            font-size: 15px;
+            display: flex;
+            color: rgb(4, 35, 92);
+            padding: 20px 16px;
+            border-right: 1px solid rgb(218, 215, 215);
+        }
+
+        .comment_icon_and_text {
+            font-size: 15px;
+            display: flex;
+            color: rgb(4, 35, 92);
+            margin-top: 20px;
+            padding: 20px 2px;
+        }
+
+        .calender_icon_and_text:hover {
+            color: rgb(31, 106, 245);
+        }
+
+        .comment_icon_and_text:hover {
+            color: rgb(31, 106, 245);
+        }
+
+        .calender_comment_icon_all div {
+            margin: 0px 9px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: rgb(4, 35, 92);
+
+        }
+
+        /* main_baground_images and text_banner */
+        .item1 {
+            background-image:
+                linear-gradient(rgba(7, 41, 77, 0.123), rgba(7, 41, 77, 0.438)),
+                url(https://drive.google.com/file/d/1BZzW6nY3eX9JONiD10vIJCztSIu2RUlu
+); 
+
+            background-attachment: fixed;
+            opacity: 1;
+            box-sizing: border-box;
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+        }
+
+        @media (max-width: 667px) {
+            .item1 {
+                height: 120vh;
+
+            }
+
+
+        }
+
+        @media(max-width:992px) {
+            .banner_image {
+                display: none
+            }
+
+        }
+
+        .banner_image {
+            /* border: 5px solid red; */
+            float: right;
+            height: 90%;
+            margin-right: 90px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .bannertext {
+            color: white;
+            width: 900%;
+            margin-top: 90px;
+            margin-left: 140px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        @media (max-width: 640px) {
+            .banner_image {
+                margin-right: 10px;
+            }
+
+            .bannertext {
+                margin-left: 30px;
+            }
+
+        }
+
+        .main_banner_and_para {
+            display: flex;
+            align-items: center;
+        }
+
+        .bannertext>h1 {
+            font-size: 40px;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .bannertext>p {
+            font-size: 20px;
+            color: #ccc;
+        }
+
+        .button_1_2 {
+            margin-top: 20px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 17px;
+            color: #07294d;
+            background-color: #ffc600;
+            padding: 17px 30px;
+            text-decoration: none !important;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button_1_2:hover {
+            color: #07294d;
+            background-color: #ffd951;
+        }
+
+        .slider_bottom_pattern {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* main_baground_images and text_banner_end */
+
+        /* courses */
+
+        .item_2 {
+            background-image:
+                linear-gradient(rgba(7, 41, 77, 0.123), rgba(7, 41, 77, 0.438)),
+                url(http://drive.google.com/uc?export=view&id=1BZzW6nY3eX9JONiD10vIJCztSIu2RUlu
+);
+            background-attachment: fixed;
+            opacity: 1;
+            box-sizing: border-box;
+            height: auto;
+            width: 100%;
+            background-size: cover;
+        }
+
+        /* info_student_course_all */
+        .info_of_all {
+            display: flex;
+            margin: 40px 0px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px 0px;
+            margin-bottom: 5%;
+        }
+
+        .info_box {
+            margin-bottom: 0px 50px;
+            padding: 20px 0px;
+
+        }
+
+        .info_box img {
+            width: 65%;
+            margin-left: 10px;
+        }
+
+        .info_text {
+            margin-top: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: rgb(248, 248, 248);
+            text-align: center;
+        }
+
+        .info_text_second_text {
+            /* margin-top: 5px; */
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+        }
+
+
+        @media (max-width: 640px) {
+            .info_of_all {
+                display: block;
+            }
+
+            .info_box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info_box img {
+                width: 20%;
+            }
+
+            .info_text {
+                font-size: 20px;
+
+            }
+        }
+
+        /* <!-- Team of Experts_techers_box --> */
+        .gallery_techers_img_all {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery_techer_img>img {
+            display: block;
+            width: 250px;
+        }
+
+        .gallery_techer_img {
+            padding: 10px;
+            background-color: #edf1f3;
+            margin: 5px;
+        }
+
+        .gallery_techer_img>div {
+            color: rgb(4, 35, 92);
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .gallery_techer_img>p {
+            font-size: 15px;
+            margin-top: 5px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: #595959;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .item_3 {
+            background-image: url(http://drive.google.com/uc?export=view&id=1GfM8WKd83QOHSzW17mxQaH6b726CaJoK);
+            background-attachment: fixed;
+            box-sizing: border-box;
+            height: auto;
+            width: 100%;
+            height: 110%;
+            background-size: cover;
+            padding-bottom: 30px;
+            
+        }
+
+        /* galler_end */
+
+        /* award_start */
+        .award_all {
+            margin: 70px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+
+        @media (max-width: 640px) {
+            .award_all {
+                width: 110%;
+                display: block;
+            }
+
+            .award_all img {
+                align-self: center;
+            }
+        }
+
+
+
+        /* award_end */
+
+        /* alial_noor_boox */
+        .star-icon_all {
+            display: flex;
+            margin-top: 15px;
+
+        }
+
+        .star-icon {
+            display: flex;
+            color: #ffb700;
+            font-size: 19px;
+            margin-right: 5px;
+        }
+
+        .star-icon:hover {
+            opacity: 60%;
+        }
+
+        .person_love_icon_all {
+            font-size: 17px;
+            display: flex;
+            color: rgb(4, 35, 92);
+            align-items: flex-end;
+        }
+
+        .fa-heart:hover {
+            color: rgb(223, 10, 10);
+        }
+
+        .fa-user:hover {
+            color: rgb(31, 106, 245);
+        }
+
+
+        .person_love_icon_all div {
+            margin: 0px 2px;
+            font-family: sans-serif;
+            color: rgb(4, 35, 92);
+        }
+
+        /* alia_noor_img_txet_all */
+
+        .footer_section_2 {
+            display: flex;
+            /* margin-top: 15px; */
+        }
+
+
+        .noor_img img {
+            width: 60%;
+            border-radius: 50%;
+        }
+
+        .noor_text {
+            margin-top: 10px;
+            margin-left: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            color: #8b8b8b;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .middle_section_user_2_button {
+            margin-left: 80px;
+        }
+
+        .middle_section_user_2_button button {
+            background: none;
+            border: none;
+            color: #1b4332;
+            background-color: #b7e4c7;
+            font-size: 15px;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .middle_section_user_2_button button:hover {
+            color: #d8fce5;
+            background-color: #1f5c43;
+
+        }
+
+        .main_outer_baground {
+            background-color: #f1f1f19f;
+            padding-bottom: 2%;
+            margin-top: 1%;
+            padding-top: 1%;
+        }
+
+        /* middle_section_3_box_all_start */
+
+        /* footer */
+        li {
+            list-style: none;
+        }
+
+        .slider_footer_pattern img {
+            width: 100%;
+            margin-top: -20px;
+        }
+
+        .item2 {
+            background-image:
+                linear-gradient(rgba(7, 41, 77, 0.123), rgba(7, 41, 77, 0.438)),
+                url('http://drive.google.com/uc?export=view&id=1BZzW6nY3eX9JONiD10vIJCztSIu2RUlu');
+            background-attachment: fixed;
+            opacity: 1;
+            box-sizing: border-box;
+            height: 90vh;
+            width: 100%;
+            background-size: cover;
+        }
+
+        @media (max-width: 950px) {
+            .item2 {
+                height: 170vh;
+                align-items: center;
+
+            }
+        }
+
+        .footer_heading::after {
+            content: "";
+            background-color: #f7b721;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+            bottom: -10px;
+            left: 0px;
+        }
+
+        .footer_heading {
+            font-size: 19px;
+            color: #ffc600;
+            position: relative;
+            margin-bottom: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+
+        }
+
+        .footer_para_icon span {
+            font-size: 15px;
+            color: white;
+            margin-left: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        .footer_para_icon {
+            margin-bottom: 10px;
+        }
+
+        .footer_para_icon {
+            color: #ffc600;
+            font-size: 16px;
+        }
+
+        /* second_para */
+        .circle_icon {
+            color: #ffc600;
+            font-size: 15px;
+        }
+
+        .footer_para_icon_2 span {
+            font-size: 15px;
+            color: white;
+            margin-left: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        .footer_para_icon_2 span:hover {
+            color: #ffc600;
+            cursor: pointer;
+        }
+
+        .footer_para_icon_2 {
+            margin-bottom: 10px;
+        }
+
+        .list_footer_3 {
+            list-style: none;
+            /* padding-left: 50px; */
+        }
+
+
+        /* fourth_conatct_us_ */
+        .conatct_img_app {
+            display: flex;
+        }
+
+        .conatct_img_app img {
+            width: 32%;
+            margin: 0px 10px;
+        }
+
+        @media (max-width: 1329px) {
+            .footer_flex_1 {
+                display: block;
+                align-items: center;
+            }
+
+            .footer_flex_2 {
+                display: block;
+                align-items: center;
+            }
+
+            .footer_flex_3 {
+                display: block;
+            }
+
+            .footer_flex_4 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 979px) {
+            .social_media_box {
+                margin: 30px 0px;
+                width: 100%;
+                align-items: center;
+            }
+        }
+
+        /* icon_footer */
+        .social_media_box {
+            display: block;
+            background-color: #044285;
+            padding: 13px 100px;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            position: relative;
+            width: 150px;
+            /* height: 20px; */
+            line-height: 21x;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+
+
+        }
+
+        .facebook_box {
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            text-align: center;
+        }
+
+        .contact_media_1 {
+            background-color: #4b6fba;
+        }
+
+        .contact_media_1 i {
+            color: white;
+            background-color: #3b5998;
+        }
+
+        .contact_media_1 i:hover {
+            background-color: #6086d8;
+        }
+
+        .contact_media_2 {
+            background-color: #0087ba;
+        }
+
+        .contact_media_2 i {
+            color: white;
+            background-color: #00acee;
+        }
+
+        .contact_media_2 i:hover {
+            background-color: #31c5ff;
+        }
+
+        .contact_media_3 {
+            background-color: #1c8fc7;
+        }
+
+        .contact_media_3 i {
+            background-color: #0e76a8;
+            color: white;
+        }
+
+        .contact_media_3 i:hover {
+            background-color: #31c5ff;
+        }
+
+        .contact_media_4 {
+            background-color: #ba0d0d;
+        }
+
+        .contact_media_4 i {
+            background-color: #FF0000;
+            color: white;
+        }
+
+        .contact_media_4 i:hover {
+            background-color: #ff3939;
+
+        }
+    </style>
+</head>
+<div class="over">
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="row bag_color">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <p class="text-white pt-2 ml-5">Online Education Courses Millions of people learning!
+
+                    </p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 icon_nav">
+
+                    <div class=" d-flex flex-row-reverse ">
+                        <div class="p-2 icon_ho">
+                            <i class="fa-brands fa-youtube  fa-lg mr-3 "></i>
+                        </div>
+                        <div class="p-2 bd-highlight icon_ho">
+                            <i class="fa-brands fa-linkedin-in  fa-lg mr-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight icon_ho">
+                            <i class="fa-brands fa-twitter  fa-lg mr-3"></i>
+                        </div>
+                        <div class="p-2 bd-highlight icon_ho">
+                            <i class="fa-brands fa-facebook-f  fa-lg mr-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="main_head2_">
+            <div> <img src=" http://drive.google.com/uc?export=view&id=12FihFLGMryLr12vBw5bS7GxwOo238Its"
+                    class="main_head2_img" alt=""></div>
+
+            <div class="main_heading2_icon" data-toggle="collapse">
+                <div class=" main_heading2_contact">
+                    <i class="fa-solid fa-phone main_heading2_icons"></i>
+                    <div class="main_heading2_icon_text">
+                        <div>Call</div>
+                        <div class="main_heading2_second_text">+123 4567 8910</div>
+                    </div>
+                </div>
+
+                <div class=" main_heading2_contact">
+                    <i class="fa-solid fa-envelope main_heading2_icons"></i>
+                    <div class="main_heading2_icon_text">
+                        <div>Email</div>
+                        <div class="main_heading2_second_text">info@example.com</div>
+                    </div>
+                </div>
+
+                <div class=" main_heading2_contact">
+
+                    <i class="fa-solid fa-house main_heading2_icons"></i>
+                    <div class="main_heading2_icon_text">
+                        <div>Address</div>
+                        <div class="main_heading2_second_text">24 Fifth st, Los Angeles, USA</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <nav class="navbar navbar-expand-lg  navbar-expand-lg   ">
+            <a href="" class="ml-lg-5"></a>
+            <button class="navbar-toggler navbar-light  " type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse main_navbar_names" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class=" ">
+                        <a class="nav-link  navbar_names" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar_names" href="#" id="" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <div class="dropdown-menu drop_nav_1" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item drop_nav" href="#">ABOUT US</a>
+                            <a class="dropdown-item drop_nav" href="#">FAQ'S</a>
+                            <a class="dropdown-item drop_nav" href="#">SUPPORT</a>
+                            <a class="dropdown-item drop_nav" href="#">SCHOLARSHIP</a>
+                        </div>
+                    </li>
+                    <li class=" ">
+                        <a class="nav-link  navbar_names" href="#">COURSES</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link navbar_names" href="#">EVENTS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link navbar_names" href="#"> TEACHERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link navbar_names" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link navbar_names" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link navbar_names" href="#">CONTACT</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="main_navbar_login_rgister navbar-brand">
+                <button class="login_register"> login / Register</button>
+
+            </div>
+        </nav>
+
+
+        <div class="container-fluid item1">
+            <div class="row ">
+                <div class="col-lg-7 main_banner_and_para">
+                    <div class="bannertext ">
+                        <h1>Start Learning and Embrace </h1>
+                        <h1> New Skills For Better Future</h1>
+                        <p class="mb-0">With the help of E-Learning, create your
+                            own path and drive on </p>
+                        <p> your skills on your own to achieve what
+                            you seek.</p>
+                        <button type="button" class="button_1_2"> View all courses</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 ">
+                    <img src="http://drive.google.com/uc?export=view&id=17kBQ0Gzli5EfaIaH6fq3xBYAymRzAoLl
+                    " width="" class="banner_image" />
+                </div>
+            </div>
+            <!-- <div class="slider_bottom_pattern">
+                <img src="http://drive.google.com/uc?export=view&id=1wLJBUm9nEcYgMPxa6XhKC0Ail1d1U6eV
+                " alt="" class="" style="border: 1px solid red;">
+            </div> -->
+        </div>
+        <img src="http://drive.google.com/uc?export=view&id=1wLJBUm9nEcYgMPxa6XhKC0Ail1d1U6eV" alt=""
+            style="width: 100%; margin-top: -50px;">
+
+        <!-- box -->
+
+        <section>
+            <!-- headings_ -->
+            <div class="middle_section pt-5">
+                <div class="text-center container">
+                    <h2 class="middle_section_heading_ font-weight-bolder">Why Choose E-learning</h2>
+                    <div class="middle_section_second_heading">Look into yourself, know you're ambitious and
+                        keep moving
+                        forward until you get something</div>
+                    <div class="middle_section_third_heading"> in return
+                        as your achievement.</div>
+                </div>
+            </div>
+            <!-- headings_ -->
+        </section>
+
+        <section class="container ">
+            <div class="row px-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto ">
+
+                    <div class="card bg-white rounded shadow-sm pt-5 ">
+                        <i
+                            class="fa-solid fa-book fa- book-icon baground_circle_1 display-4 book-icon m-auto mt-auto"></i>
+                        <div class="card-body">
+                            <h5 class="text-center box_head">Course Accessibility</h5>
+                            <p class="text-center"> Select a suitable course from the vast area of other courses
+                                and
+                                access it anytime and from anywhere
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card bg-white rounded shadow-sm pt-5  ">
+                        <i class="fa-solid fa-graduation-cap baground_circle_2  cap-icon display-4  m-auto mt-auto"></i>
+                        <div class="card-body">
+                            <h5 class="text-center box_head">Scholarship</h5>
+                            <p class=" text-center box_para">To encourage talent, we give up to 100 % aid to
+                                those young
+                                learners who have the ability to do something.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card bg-white rounded shadow-sm pt-5 ">
+                        <i class="fa-solid fa-globe glob-icon baground_circle_3 display-4  m-auto mt-auto"></i>
+                        <div class="card-body">
+                            <h5 class="text-center box_head">Practical learning</h5>
+                            <p class="text-center box_para"> Interact yourself with the real-world while doing
+                                the real-world
+                                project and other things to master your skills.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card bg-white rounded shadow-sm pt-5 ">
+                        <i class="fa-solid fa-user conatact-icon baground_circle_4 display-4  m-auto mt-auto"></i>
+                        <div class="card-body">
+                            <h5 class="text-center box_head">Expert Instructions</h5>
+                            <p class="text-center box_para">Hold the opportunity to learn from the industry’s
+                                expert and
+                                learn how to execute things like them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card bg-white rounded shadow-sm pt-5 ">
+                        <i
+                            class="fa-solid fa-headphones-simple baground_circle_5  headphone-icon   display-4  m-auto mt-auto"></i>
+                        <div class="card-body">
+                            <h5 class="text-center box_head">Schedule learning </h5>
+                            <p class="text-center box_para"> Learn at whatever and whenever at your suitable
+                                time and place.
+                                Get a part-time study degree.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card bg-white rounded shadow-sm pt-5 ">
+                        <i class="fa-solid fa-video person-icons baground_circle_6 display-4  m-auto mt-auto"></i>
+                        <div class="card-body">
+                            <h5 class="text-center box_head">Recorded sessions</h5>
+                            <p class="text-center box_para">Missed the live class? Don’t worry about it, access
+                                to every
+                                session on the chosen course.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5"></div>
+        </section>
+
+        <!-- box end-->
+
+        <!-- alia noor box-->
+
+        <section class="item_3">
+            <!-- headings_ -->
+
+            <div class="middle_section pt-5">
+                <div class="text-center container">
+                    <h2 class="middle_section_heading_ font-weight-bolder">Discover The Variety Of Courses Here</h2>
+                    <div class="middle_section_second_heading">Choose one appropriate course for you from over
+                        multifarious courses available on this</div>
+                    <div class="middle_section_third_heading"> platform.</div>
+                </div>
+            </div>
+            <!-- headings_ -->
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                        <div class="card">
+                            <img src=" http://drive.google.com/uc?export=view&id=1n37_MPdf0Z2RTFiRUM2Dikuy9zSJj7Pt "
+                                alt="error">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold hd_co">Data Product Manager</h5>
+                                <p class="card-text text-secondary">Follow the step by step process to learn data and
+                                    gain
+                                    understandability of
+                                    software-based products in depth.</p>
+                            </div>
+                            <div class="middle_section_part_icon d-flex justify-content-center">
+                                <div class="star-icon_all text-warning">
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                </div>
+                                <div class="person_love_icon_all d-flex px-3 ">
+                                    <i class="fa-solid fa-user px-2"></i>
+                                    <div>
+                                        31
+                                    </div>
+                                    <i class="fa-solid fa-heart px-2"></i>
+                                    <div>10</div>
+                                </div>
+                            </div>
+
+                            <div style="border-bottom: 1px solid rgb(212, 212, 212); margin-top: 20px;"></div>
+                            <div class="footer_section_2 card-body">
+                                <div class="noor_img"><img
+                                        src="http://drive.google.com/uc?export=view&id=1R4ck7cp350481ivyGsndMqsZmaiVrXYX"
+                                        alt="img"></div>
+                                <div class="noor_text">Alia Noor</div>
+                                <div class="middle_section_user_2_button"> <button>Free</button> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                        <div class="card ">
+                            <img src=" http://drive.google.com/uc?export=view&id=1svfqX7NlMSvv7XUudbH8dT-W2uxlQCiu"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold hd_co hd_co">Learning SQL</h5>
+                                <p class="card-text text-secondary">Follow the step by step process to learn data and
+                                    gain
+                                    understandability of
+                                    software-based products in depth.</p>
+                            </div>
+                            <div class="middle_section_part_icon d-flex justify-content-center">
+                                <div class="star-icon_all text-warning">
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                </div>
+                                <div class="person_love_icon_all d-flex px-3 ">
+                                    <i class="fa-solid fa-user px-2"></i>
+                                    <div>
+                                        31
+                                    </div>
+                                    <i class="fa-solid fa-heart px-2"></i>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                            <div style="border-bottom: 1px solid rgb(212, 212, 212); margin-top: 20px;"></div>
+                            <div class="footer_section_2 card-body">
+                                <div class="noor_img"><img
+                                        src="http://drive.google.com/uc?export=view&id=1R4ck7cp350481ivyGsndMqsZmaiVrXYX"
+                                        alt="img"></div>
+                                <div class="noor_text">Alia Noor</div>
+                                <div class="middle_section_user_2_button"> <button>Free</button> </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                        <div class="card">
+                            <img src=" http://drive.google.com/uc?export=view&id=1HjaaA3zyGAuwCQAxaJBnh0LHldpbaPJc"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold hd_co">Java Programming</h5>
+                                <p class="card-text text-secondary">Follow the step by step process to learn data and
+                                    gain
+                                    understandability of
+                                    software-based products in depth.</p>
+                            </div>
+                            <div class="middle_section_part_icon d-flex justify-content-center">
+                                <div class="star-icon_all text-warning">
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                </div>
+                                <div class="person_love_icon_all d-flex px-3 ">
+                                    <i class="fa-solid fa-user px-2"></i>
+                                    <div>
+                                        31
+                                    </div>
+                                    <i class="fa-solid fa-heart px-2"></i>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                            <div style="border-bottom: 1px solid rgb(212, 212, 212); margin-top: 20px;"></div>
+                            <div class="footer_section_2 card-body">
+                                <div class="noor_img"><img
+                                        src="http://drive.google.com/uc?export=view&id=1R4ck7cp350481ivyGsndMqsZmaiVrXYX"
+                                        alt="img"></div>
+                                <div class="noor_text">Alia Noor</div>
+                                <div class="middle_section_user_2_button"> <button>Free</button> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                        <div class="card ">
+                            <img src=" http://drive.google.com/uc?export=http://drive.google.com/uc?export=view&id=1MDJLT-50_qQPZ42YdmoflJXMWZnRX9Qz
+                            " class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold hd_co">UI/UX Designing</h5>
+                                <p class="card-text text-secondary">Follow the step by step process to learn data and
+                                    gain
+                                    understandability of
+                                    software-based products in depth.</p>
+                            </div>
+                            <div class="middle_section_part_icon d-flex justify-content-center">
+                                <div class="star-icon_all text-warning">
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                </div>
+                                <div class="person_love_icon_all d-flex px-3 ">
+                                    <i class="fa-solid fa-user px-2"></i>
+                                    <div>
+                                        31
+                                    </div>
+                                    <i class="fa-solid fa-heart px-2"></i>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                            <div style="border-bottom: 1px solid rgb(212, 212, 212); margin-top: 20px;"></div>
+                            <div class="footer_section_2 card-body">
+                                <div class="noor_img"><img
+                                        src="http://drive.google.com/uc?export=view&id=1R4ck7cp350481ivyGsndMqsZmaiVrXYX"
+                                        alt="img"></div>
+                                <div class="noor_text">Alia Noor</div>
+                                <div class="middle_section_user_2_button"> <button>Free</button> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class=" col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                        <div class="card ">
+                            <img src=" http://drive.google.com/uc?export=view&id=1nyRa4AYNRy6nbSuYhYinndJLkLiYasO4 "
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold hd_co">Data Analytics</h5>
+                                <p class="card-text text-secondary">Follow the step by step process to learn data and
+                                    gain
+                                    understandability of
+                                    software-based products in depth.</p>
+                            </div>
+                            <div class="middle_section_part_icon d-flex justify-content-center">
+                                <div class="star-icon_all text-warning">
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                </div>
+                                <div class="person_love_icon_all d-flex px-3 ">
+                                    <i class="fa-solid fa-user px-2"></i>
+                                    <div>
+                                        31
+                                    </div>
+                                    <i class="fa-solid fa-heart px-2"></i>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                            <div style="border-bottom: 1px solid rgb(212, 212, 212); margin-top: 20px;"></div>
+                            <div class="footer_section_2 card-body">
+                                <div class="noor_img"><img
+                                        src="http://drive.google.com/uc?export=view&id=1R4ck7cp350481ivyGsndMqsZmaiVrXYX"
+                                        alt="img"></div>
+                                <div class="noor_text">Alia Noor</div>
+                                <div class="middle_section_user_2_button"> <button>Free</button> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                        <div class="card ">
+                            <img src=" http://drive.google.com/uc?export=view&id=1Z6U0ibiDeJGy7Q84zttmwAC9gLHhMFVT "
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold hd_co">Cyber Security</h5>
+                                <p class="card-text text-secondary">Follow the step by step process to learn data and
+                                    gain
+                                    understandability of
+                                    software-based products in depth.</p>
+                            </div>
+                            <div class="middle_section_part_icon d-flex justify-content-center">
+                                <div class="star-icon_all text-warning">
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                    <i class="fa-solid fa-star star-icon"></i>
+                                </div>
+                                <div class="person_love_icon_all d-flex px-3 ">
+                                    <i class="fa-solid fa-user px-2"></i>
+                                    <div>
+                                        31
+                                    </div>
+                                    <i class="fa-solid fa-heart px-2"></i>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                            <div style="border-bottom: 1px solid rgb(212, 212, 212); margin-top: 20px;"></div>
+                            <div class="footer_section_2 card-body">
+                                <div class="noor_img"><img
+                                        src="http://drive.google.com/uc?export=view&id=1R4ck7cp350481ivyGsndMqsZmaiVrXYX"
+                                        alt="img"></div>
+                                <div class="noor_text">Alia Noor</div>
+                                <div class="middle_section_user_2_button"> <button>Free</button> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <!--alia noor end-->
+
+        <section>
+            <!-- headings_ -->
+            <div class="middle_section pt-5 ">
+                <div class="text-center container">
+                    <h2 class="middle_section_heading_ font-weight-bolder">Upcoming Events
+                    </h2>
+                    <div class="middle_section_second_heading ">To support and empower students, we arrange some of the
+                        events where they acknowledge something</div>
+                    <div class="middle_section_third_heading"> which helps them to become a successful person..</div>
+                </div>
+            </div>
+            <!-- headings_ -->
+        </section>
+
+
+
+        <!-- Events -->
+
+        <section class="container">
+            <div class="row d-flex justify-content-sm-center align-items-sm-center mb-5">
+
+                <!-- Event_1_start -->
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto ">
+                    <div class="card  ">
+                        <div class="blog_box_7_img_event_1">
+                            <!-- middle_section_3_img_event_1 -->
+                            <div class="blog_box_event_month">
+                                <!-- event_month -->
+                                <h4>16</h4>
+                                <p>May</p>
+                            </div>
+                        </div>
+                        <div class="card-body middle_section_3_all_text_and_icon">
+                            <h5 class="card-title middle_section_3_heading">Webinar: Data Specialist</h5>
+                            <p class="card-text middle_section_3_para">Get on the digital seat and hear what Data
+                                analysis experts have to say about the industry and enlighten .</p>
+                        </div>
+                        <div class="person_map_icon_all">
+                            <div class="person_icon_and_text">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    John Wood
+                                </div>
+                            </div>
+                            <div class="map_icon_and_text">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>New York City</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event1_end -->
+
+                <!-- Event_2_start -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto ">
+                    <div class="card ">
+                        <div class="blog_box_7_img_event_2">
+                            <!-- middle_section_3_img_event_1 -->
+                            <div class="blog_box_event_month">
+                                <!-- event_month -->
+                                <h4>16</h4>
+                                <p>May</p>
+                            </div>
+                        </div>
+                        <div class="card-body middle_section_3_all_text_and_icon">
+                            <h5 class="card-title middle_section_3_heading">Virtual Java Conference</h5>
+                            <p class="card-text middle_section_3_para">Grab the opportunity and dive into the ocean of
+                                learning and upcoming
+                                events coming in the java world..</p>
+                        </div>
+                        <div class="person_map_icon_all">
+                            <div class="person_icon_and_text">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    John Wood
+                                </div>
+                            </div>
+                            <div class="map_icon_and_text">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>New York City</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event2_end -->
+
+                <!-- Event3_Start -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto ">
+                    <div class="card ">
+                        <div class="blog_box_7_img_event_3">
+                            <!-- middle_section_3_img_event_1 -->
+                            <div class="blog_box_event_month">
+                                <!-- event_month -->
+                                <h4>16</h4>
+                                <p>May</p>
+                            </div>
+                        </div>
+                        <div class="card-body middle_section_3_all_text_and_icon">
+                            <h5 class="card-title middle_section_3_heading">International talk on E-Learning</h5>
+                            <p class="card-text middle_section_3_para">Come around and listen to the industry experts
+                                who have the vision to take e-learning on another level...</p>
+                        </div>
+                        <div class="person_map_icon_all">
+                            <div class="person_icon_and_text">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    John Wood
+                                </div>
+                            </div>
+                            <div class="map_icon_and_text">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>New York City</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event3_End -->
+        </section>
+
+
+        <!-- info_of_courses_student -->
+
+        <section>
+            <div class="item_2 ">
+
+                <div class="info_of_all  ">
+
+
+                    <div class="student_box_1 info_box  ">
+                        <img src="http://drive.google.com/uc?export=view&id=1Q-E8ZHr8sWAgVhlf6I8KWzAq5z1brKC5" alt=""
+                        
+                            class="mx-sm-auto">
+                        <div class="info_text">1800+</div>
+                        <div class="info_text_second_text">Students</div>
+                    </div>
+
+                    <div class="course_box_2 info_box  ">
+                        <img src="http://drive.google.com/uc?export=view&id=1oI196V6WjX8dJ97_CPTYS3wyDCRtWwGI" alt=""
+                            class="mx-sm-auto">
+                        <div class="info_text">1800+</div>
+                        <div class="info_text_second_text">Courses</div>
+                    </div>
+
+                    <div class="techers_box_3 info_box  ">
+                        <img src="http://drive.google.com/uc?export=view&id=173tdAElg8RYHy8hKG-qwhwL0VerIcLvV " alt=""
+                            class="mx-sm-auto">
+                        <div class="info_text">1800+</div>
+                        <div class="info_text_second_text">Certified Teachers</div>
+                    </div>
+
+                    <div class="award_box_4 info_box  ">
+                        <img src="http://drive.google.com/uc?export=view&id=1jaRIMY3C8zxDWog4aSHE3gYDEy0JfRG8" alt=""
+                            class="mx-sm-auto">
+                        <div class="info_text">1800+</div>
+                        <div class="info_text_second_text">Award Winning</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- info_of_courses_student_end -->
+
+
+        <section>
+            <!-- headings_ -->
+            <div class="middle_section pt-5">
+                <div class="text-center container">
+                    <h2 class="middle_section_heading_ font-weight-bolder">Our Gallery</h2>
+                    <div class="middle_section_second_heading">If you are going to use a passage of you need to be sure
+                        there isn't anything embarrassing</div>
+                    <div class="middle_section_third_heading"> hidden in the middle of text.</div>
+                </div>
+            </div>
+            <!-- headings_ -->
+        </section>
+        <!-- buttons_start -->
+        <div class="gallery_button_all">
+            <button>All</button>
+            <button>Web Design</button>
+            <button>Web Development</button>
+            <button>Brand Identity</button>
+        </div>
+        <!-- buttons_end -->
+
+        <!-- gallery_images_start -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="gallery_img_all">
+                    <div class=" gallery_img pt-5 col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <img src="  http://drive.google.com/uc?export=view&id=1eoqG7hLl1cL6j7y9W1__4MOAO9d4Yoaa" alt="">
+                        <!-- <i class="fa-solid fa-images"></i> -->
+                    </div>
+                    <div class="gallery_img pt-5 col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <img src="http://drive.google.com/uc?export=view&id=1U3IHEnjq3OKMgZmoi8hYAAtr5s4l0T0-
+                " alt="">
+                        <!-- <i class="fa-solid fa-images"></i> -->
+                    </div>
+                    <div class="gallery_img pt-5 col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <img src="        http://drive.google.com/uc?export=view&id=1RnuvI09VrXash8fgzUFzY7WW7v8IdSMW
+                " alt="">
+                        <!-- <i class="fa-solid fa-images"></i> -->
+                    </div>
+
+
+                    <div class="gallery_img pt-5 col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <img src="        http://drive.google.com/uc?export=view&id=1OJJxSmz-8GdZhFGtsaIWzJvetZBK9p9a
+                " alt="">
+                    </div>
+                    <div class="gallery_img pt-5 col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <img src="        http://drive.google.com/uc?export=view&id=15ahrHKRdANvd5FXgA6LRYGzDN0GEuCN6
+                " alt="">
+                    </div>
+                    <div class="gallery_img pt-5 col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <img src="        http://drive.google.com/uc?export=view&id=1z_M-l7qbu5VqW9Cjnve-75GAC0R2twKY
+                " alt="">
+                    </div>
+                </div>
+
+                <!-- Team_expert_start -->
+                <section class="item_3">
+                    <!-- headings_ -->
+                    <div class="middle_section pt-5">
+                        <div class="text-center container ">
+                            <h2 class="middle_section_heading_ font-weight-bolder">Team of Experts
+
+                            </h2>
+                            <div class="middle_section_second_heading">Here you will have the team of experts from
+                                multifarious
+                                industries you will learn from them</div>
+                            <div class="middle_section_third_heading"> under their experience and ethical guidance.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- headings_ -->
+
+                    <div class="gallery_techers_img_all ">
+
+                        <div class="gallery_techer_img">
+                            <img src="http://drive.google.com/uc?export=view&id=1p-ONpKzbQe8ex6XldXFD7ynerr8wHY3n"
+                                alt="">
+                            <div>Aniket Smith</div>
+                            <p>Head Of Department</p>
+                        </div>
+                        <div class="gallery_techer_img">
+                            <img src="http://drive.google.com/uc?export=view&id=1lSpoIv6ajlZ9kaWdOE0VWxbWLMtNTnfT"
+                                alt="">
+                            <div>Rebeka Alig</div>
+                            <p>Chemistry Techer</p>
+
+                        </div>
+                        <div class="gallery_techer_img">
+                            <img src="http://drive.google.com/uc?export=view&id=1Qq_XaWsg06MBl19t69V94YPOJH94jZsO"
+                                alt="">
+                            <div> Henry Gadekar</div>
+                            <p>English Techer</p>
+                        </div>
+                        <div class="gallery_techer_img">
+                            <img src="http://drive.google.com/uc?export=view&id=1CkSsHzNHQ-JWCe6gdi7yaSnhr0SgtWcB"
+                                alt="">
+                            <div>John Figery</div>
+                            <p>Computer Techer</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Team of Experts_end_box -->
+
+
+        <!-- box_pricing -->
+        <section>
+            <!-- headings_ -->
+            <div class="middle_section pt-5">
+                <div class="text-center container">
+                    <h2 class="middle_section_heading_ font-weight-bolder">Our Pricing
+                    </h2>
+                    <div class="middle_section_second_heading">Join Us And Become A Part Of The Revolution
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container">
+            <div class="row">
+                <!-- pricing_box_1 -->
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card pricing_box_main" style="width: 20rem;">
+                        <ul class="list-group list-group-flush Pricing_box1">
+                            <li class="list-group-item princing_heading">STANDARD</li>
+                            <li class="list-group-item Price_heading_2">$99/ Month</li>
+                            <li class="list-group-item box_menu">Unlimited access courses</li>
+                            <li class="list-group-item box_menu">Progress Report Available</li>
+                            <li class="list-group-item box_menu">High resolution videos</li>
+                            <li class="list-group-item box_menu">------</li>
+                            <li class="list-group-item box_menu">------</li>
+                            <div class="pricing_button">
+                                <button class="pricing_button_1" type="button"> Select Plan</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- pricing_box_2 -->
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card Pricing_box2" style="width: 20rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item princing_heading_2">BASIC</li>
+                            <li class="list-group-item Price_heading_2_2">$120/ Month</li>
+                            <li class="list-group-item box_menu_2">Unlimited access courses</li>
+                            <li class="list-group-item box_menu_2">Progress Report Available</li>
+                            <li class="list-group-item box_menu_2">High resolution videos</li>
+                            <li class="list-group-item box_menu_2">Certificate after completion</li>
+                            <li class="list-group-item box_menu_2">------</li>
+                            <div class="pricing_button">
+                                <button class="pricing_button_2" type="button"> Select Plan</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- princing_box_3 -->
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto">
+                    <div class="card Pricing_box3" style="width: 20rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item princing_heading_3">PREMIUM</li>
+                            <li class="list-group-item Price_heading_2_3">$199 / Month</li>
+                            <li class="list-group-item box_menu_3">Unlimited access courses</li>
+                            <li class="list-group-item box_menu_3">Progress Report Available</li>
+                            <li class="list-group-item box_menu_3">High resolution videos</li>
+                            <li class="list-group-item box_menu_3">Certificate after completion</li>
+                            <li class="list-group-item box_menu_3">Private sessions</li>
+                            <div class="pricing_button">
+                                <button class="pricing_button_3" type="button"> Select Plan</button>
+                            </div>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Events -->
+        <!-- Our Blog -->
+        <section class="item_3">
+            <!-- headings_ -->
+            <div class="middle_section pt-5">
+                <div class="text-center container">
+                    <h2 class="middle_section_heading_ font-weight-bolder">Our Blog
+                    </h2>
+                    <div class="middle_section_second_heading">Read some of the words and know what skilled
+                        people
+                        work
+                        or what technology would become</div>
+                    <div class="middle_section_third_heading">revolutionary for the world.</div>
+                </div>
+            </div>
+            <!-- headings_ -->
+
+            <!-- Our Blog -->
+
+            <section class="container">
+                <div class="row d-flex justify-content-sm-center align-items-sm-center mb-5">
+
+                    <!-- Blog_1_start -->
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto ">
+                        <div class="card  " style="width: 21rem;">
+                            <div class="blog_box_2_img_event_1">
+                                <!-- middle_section_3_img_event_1 -->
+                                <div class="blog_box_event_month">
+                                    <!-- event_month -->
+                                    <h4>16</h4>
+                                    <p>May</p>
+                                </div>
+                            </div>
+                            <div class="card-body middle_section_3_all_text_and_icon">
+                                <h5 class="card-title middle_section_3_heading">How can Elon Musk think?</h5>
+                                <p class="card-text middle_section_3_para">In this pacing world, every
+                                    billionaire
+                                    is
+                                    working on his vision and ways to make this world a better place....</p>
+                            </div>
+                            <div class="calender_comment_icon_all">
+                                <div class="calender_icon_and_text">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <div>
+                                        16 May, 2019
+                                    </div>
+                                </div>
+                                <div class="comment_icon_and_text">
+
+                                    <i class="fa-solid fa-comment"></i>
+                                    <div> 2 Comment</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- blog1_end -->
+
+                    <!--Blog_2_start -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto ">
+                        <div class="card " style="width: 21rem;">
+                            <div class="blog_box_2_img_event_2">
+                                <!-- middle_section_3_img_event_1 -->
+                                <div class="blog_box_event_month">
+                                    <!-- event_month -->
+                                    <h4>16</h4>
+                                    <p>May</p>
+                                </div>
+                            </div>
+                            <div class="card-body middle_section_3_all_text_and_icon">
+                                <h5 class="card-title middle_section_3_heading">What are the upcoming
+                                    Technologies?
+                                </h5>
+                                <p class="card-text middle_section_3_para">Every new technology takes its place
+                                    year
+                                    after
+                                    year or maybe a decade, In general, new technologies must...</p>
+                            </div>
+                            <div class="calender_comment_icon_all">
+                                <div class="calender_icon_and_text">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <div>
+                                        16 May, 2019
+                                    </div>
+                                </div>
+                                <div class="comment_icon_and_text">
+
+                                    <i class="fa-solid fa-comment"></i>
+                                    <div> 2 Comment</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- blog2_end -->
+
+                    <!-- Blog3_Start -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mx-md-auto ">
+                        <div class="card " style="width: 21rem;">
+                            <div class="blog_box_2_img_event_3">
+                                <!-- middle_section_3_img_event_1 -->
+                                <div class="blog_box_event_month">
+                                    <!-- event_month -->
+                                    <h4>16</h4>
+                                    <p>May</p>
+                                </div>
+                            </div>
+                            <div class="card-body middle_section_3_all_text_and_icon">
+                                <h5 class="card-title middle_section_3_heading">How to influence yourself to get
+                                    skilled?
+                                </h5>
+                                <p class="card-text middle_section_3_para">Every human’s mind works differently,
+                                    nevertheless, the ability to listen is the same conversely perceiving...</p>
+                            </div>
+                            <div class="calender_comment_icon_all">
+                                <div class="calender_icon_and_text">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <div>
+                                        16 May, 2019
+                                    </div>
+                                </div>
+                                <div class="comment_icon_and_text">
+
+                                    <i class="fa-solid fa-comment"></i>
+                                    <div> 2 Comment</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog3_End -->
+            </section>
+        </section>
+
+        <section>
+            <div class="award_all">
+                <div>
+                    <img src=" http://drive.google.com/uc?export=view&id=1KEQf8gMV2rT3CKhmXjgdLL4bRDQczCvx" alt="">
+                </div>
+                <div>
+                    <img src=" http://drive.google.com/uc?export=view&id=1XvtPTKfPc2a82th0z208K8IS3IxpMNeo" alt="">
+                </div>
+                <div>
+                    <img src="http://drive.google.com/uc?export=view&id=1yCFuKXSYL7oRBJ-9GzfZml63cNqlrl7k" alt="">
+                </div>
+                <div>
+                    <img src="http://drive.google.com/uc?export=view&id=1sjJq6JtJLkiJo1U4A9dEpDYb4Zqbeb_q" alt="">
+                </div>
+                <div>
+                    <img src=" http://drive.google.com/uc?export=view&id=1V0lHfOqDyyudv7_iNOj1-lG6Vv027yOW" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-5"></div>
+        <footer>
+            <div class="item2">
+                <div class="slider_footer_pattern"><img src="http://drive.google.com/uc?export=view&id=1q59JwEmMQgSaJhmI2-Ah8zfmWnf8AKDe
+                    " alt=""></div>
+                <div class="mt-5"></div>
+                <div class="mt-5"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="d-lg-flex flex-row">
+                            <div class="footer_flex_1">
+
+                                <ul class="list_footer">
+                                    <h3 class="footer_heading">Contact Us</h3>
+                                    <li class="footer_para_icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span> Spring Store London Oxford <br>
+                                            <span style="margin-left: 35px;"> Street, 012 United Kingdom
+                                            </span></span>
+                                    </li>
+                                    <li class="footer_para_icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>+00 1234 456789</span>
+                                    </li>
+                                    <li class="footer_para_icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span> info@example.com</span>
+                                    </li>
+                                    <li class="footer_para_icon">
+                                        <i class="fa-solid fa-fax"></i>
+                                        <span>
+                                            000 123 2294 089
+                                        </span>
+                                    </li>
+                                    <!-- <div class="social_media_box contact_media_1 ">
+                                        <i class="fa-brands fa-facebook-f facebook_box "></i>
+                                        Facebook
+                                    </div> -->
+                                </ul>
+
+                            </div>
+                            <div class="Footer_main_outside footer_flex_2" class="">
+                                <ul class="list_footer ">
+
+                                    <h3 class="footer_heading"> Feature Links</h3>
+                                    <!-- 1st_line -->
+                                    <div style="display: flex;">
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span> About us
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none; margin-left: 90px;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span> Teachers
+                                                </span>
+                                            </a>
+                                        </li>
+
+
+
+                                    </div>
+                                    <!-- 2nd_line -->
+
+                                    <div style="display: flex;">
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span> Courses
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none; margin-left: 95px;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span> Pricing
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+
+                                    <!-- 3rd_line -->
+
+                                    <div style="display: flex;">
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span>Scholarship
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none; margin-left: 68px;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span> Blog
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+
+                                    <!-- 4th_line -->
+
+                                    <div style="display: flex;">
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span>Contact
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="footer_para_icon_2">
+                                            <a href="" style="text-decoration: none; margin-left: 95px;">
+                                                <i class="far fa-dot-circle circle_icon"></i>
+                                                <span>Events
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <!-- <div class="social_media_box contact_media_2">
+                                        <i class="fa-brands fa-twitter facebook_box "></i>
+                                        twitter
+                                    </div> -->
+                                </ul>
+                            </div>
+                            <!-- third_footer -->
+                            <div style="" class="footer_flex_3 ">
+                                <ul class="list_footer_3">
+                                    <h3 class="footer_heading"> Support</h3>
+                                    <li class="footer_para_icon_2">
+                                        <a href="" style="text-decoration: none;">
+                                            <i class="far fa-dot-circle circle_icon"></i>
+                                            <span> FAQ's
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="footer_para_icon_2">
+                                        <a href="" style="text-decoration: none; ">
+                                            <i class="far fa-dot-circle circle_icon"></i>
+                                            <span> Support
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- <div class="social_media_box contact_media_3 px-6 ">
+                                    <i class="fa-brands fa-linkedin-in facebook_box "></i>
+                                    linkedin
+                                </div> -->
+                            </div>
+                            <!-- Fourth_footer -->
+                            <div class="footer_flex_4">
+                                <ul class="list_footer_4">
+                                    <h3 class="footer_heading"> Download Our App</h3>
+                                    <div class="conatct_img_app">
+                                        <img src="http://drive.google.com/uc?export=view&id=1hWXlwvMGktCCx5q9VK6rWfNe2lKnKe24
+                                        " alt="">
+                                        <img src=" http://drive.google.com/uc?export=view&id=1CrnUZTgqZpuJgfcIFTnJfWuoH0hHwiZL"
+                                            alt="">
+                                    </div>
+                                    <!-- <div class="social_media_box contact_media_4">
+                                        <i class="fab fa-youtube facebook_box "></i>
+                                        YOUTUBE
+                                    </div> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row ">
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="social_media_box contact_media_1 ">
+                                    <i class="fa-brands fa-facebook-f facebook_box "></i>
+                                    Facebook
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="social_media_box contact_media_2">
+                                    <i class="fa-brands fa-twitter facebook_box "></i>
+                                    twitter
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="social_media_box contact_media_3 px-6 ">
+                                    <i class="fa-brands fa-linkedin-in facebook_box "></i>
+                                    linkedin
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="social_media_box contact_media_4   ">
+                                    <i class="fab fa-youtube facebook_box "></i>
+                                    YOUTUBE
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+
+
+
+
+</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
